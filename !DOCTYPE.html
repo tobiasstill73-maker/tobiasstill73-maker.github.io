@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    color: black;
+}
+
+/* FIXED: Moved this out of the body block so it registers properly */
+#draggable-img {
+    position: absolute;
+    cursor: grab;
+    width: 150px;
+}
+
+/* Fixed top box */
+.fixed-top-box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid #FF0000;
+}
+
+/* Navigation bar directly under header */
+.nav-bar {
+    width: 100%;
+    background-color: #222;
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 3px solid red;
+    position: fixed;
+    top: 100px; /* sits directly under the fixed-top-box */
+    z-index: 999;
+}
+.nav-bar a {
+    display: inline-block;
+    background-color: #000000;
+    color: red;
+    padding: 12px 25px;
+    margin: 0 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #333; /* makes it look like a button */
+}
+
+.nav-bar a:hover {
+    background-color: #D3D3D3;
+}
+
+/* Add spacing so content isn't hidden behind fixed elements */
+.content {
+    margin-top: 160px; /* space for header + nav bar */
+    padding: 20px;
+}
+
+/* Dropdown styling */
+.dropbtn {
+  background-color: #000000;
+  color: red;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1C1C1C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1C1C1C;
+}
+
+/* Section styling */
+h2 {
+    color: red;
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIXED HEADER -->
+<div class="fixed-top-box">
+    <h1><span style="color: red;">SDR</span> <span style="color: white;">CONSOLE SUPPORT PAGE</span></h1>
+</div>
+
+<!-- FIXED NAV BAR -->
+<div class="nav-bar">
+    <a href="#v1.0.0.0">1.0.0.0</a>
+    <a href="#v1.0.0.1">1.0.0.1</a>
+    <a href="#v1.0.1.0">1.0.1.0</a>
+    <a href="#v1.0.1.1">1.0.1.1</a>
+    <a href="#v1.1.1.1">Report a Bug</a>
+    <a href="#v2.1.1.1">Hardware Support</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+<h1 style="font-size: 20px;">POWERED BY <span style="color: Blue;">LINTEK</span></h1>
+
+<p>Thank you for purchasing the <span style="color: red;">SDR</span>. This is the one stop shop for all support involving the <span style="color: red;">SDR</span> 1.0.0.0 console. Please select the OS version to receive relevant support.</p>
+
+<!-- DROPDOWN -->
+<div class="dropdown">
+  <button class="dropbtn">Quick Links</button>
+  <div class="dropdown-content">
+    <a href="#v1.0.0.0">Version 1.0.0.0</a>
+    <a href="#v1.0.0.1">Version 1.0.0.1</a>
+    <a href="#v1.0.1.0">Version 1.0.1.0</a>
+    <a href="#v1.0.1.1">Version 1.0.1.1</a>
+    <a href="#v1.1.1.1">Report a Bug</a>
+    <a href="#v2.1.1.1">Hardware Support</a>
+  </div>
+</div>
+
+<!-- SECTIONS -->
+
+<div id="v1.0.0.0">
+  <h2><span style="color: black;">UPDATE</span> <span style="color: red;">1.0.0.0</span></h2>
+  <p>There are no reported bugs and fixes with this version of <span style="color: red;">SDR</span> OS.</p>
+</div>
+
+<div id="v1.0.0.1">
+  <h2><span style="color: black;">UPDATE</span> <span style="color: red;">1.0.0.1</span></h2>
+  <p>There are no reported bugs and fixes with this version of <span style="color: red;">SDR</span> OS.</p>
+</div>
+
+<div id="v1.0.1.0">
+  <h2><span style="color: black;">UPDATE</span> <span style="color: red;">1.0.1.0</span></h2>
+  <p>There are no reported bugs and fixes with this version of <span style="color: red;">SDR</span> OS.</p>
+</div>
+
+<div id="v1.0.1.1">
+  <h2><span style="color: black;">UPDATE</span> <span style="color: red;">1.0.1.1</span></h2>
+  <p>There are no reported bugs and fixes with this version of <span style="color: red;">SDR</span> OS.</p>
+</div>
+
+<div id="v1.1.1.1">
+  <h2><span style="color: black;">REPORT A BUG</span> <span style="color: red;"></span></h2>
+  <p>For All Bug Reporting Please Contact a Technition on 22GrahamD@ccgrammarschool.co.uk</p>
+</div>
+
+<div id="v2.1.1.1">
+  <h2><span style="color: black;">HARDWARE SUPPORT</span> <span style="color: red;"></span></h2>
+  <p>Turning on the <span style="color: red;">SDR</span> console.</p>
+</div>
+
+<!-- FIXED: Added closing bracket and fixed the ID attribute to match CSS/JS -->
+<img id="draggable-img" src="gold calligraphy log.png" alt="A happy golden retriever puppy">
+
+<script>
+  // FIXED: Targets the correct matching ID element now
+  const img = document.getElementById('draggable-img');
+  let isDragging = false;
+  let startX, startY;
+
+  img.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX - img.offsetLeft;
+    startY = e.clientY - img.offsetTop;
+    img.style.cursor = 'grabbing';
+    // Prevents standard browser image dragging ghost effects
+    e.preventDefault(); 
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    img.style.left = (e.clientX - startX) + 'px';
+    img.style.top = (e.clientY - startY) + 'px';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    img.style.cursor = 'grab';
+  });
+</script>
+
+</div> <!-- Added missing closing content div -->
+</body>
+</html>
+
