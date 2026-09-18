@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    color: black;
+}
+
+/* FIXED: Moved this out of the body block so it registers properly */
+#draggable-img {
+    position: absolute;
+    cursor: grab;
+    width: 150px;
+}
+
+/* Fixed top box */
+.fixed-top-box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 2px solid #FF0000;
+}
+
+/* Navigation bar directly under header */
+.nav-bar {
+    width: 100%;
+    background-color: #222;
+    padding: 12px 0;
+    text-align: center;
+    border-bottom: 3px solid red;
+    position: fixed;
+    top: 100px; /* sits directly under the fixed-top-box */
+    z-index: 999;
+}
+.nav-bar a {
+    display: inline-block;
+    background-color: #000000;
+    color: red;
+    padding: 12px 25px;
+    margin: 0 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #333; /* makes it look like a button */
+}
+
+.nav-bar a:hover {
+    background-color: #D3D3D3;
+}
+
+.content {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+
+.dropbtn {
+  background-color: #000000;
+  color: red;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1C1C1C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1C1C1C;
+}
+
+
+h2 {
+    color: red;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="fixed-top-box">
+    <h1><span style="color: red;">SDR</span> <span style="color: white;">CONSOLE SUPPORT PAGE (UPDATE 1.0.1.1)</span></h1>
+</div>
+
+<div class="nav-bar">
+    <a href="index.html">home</a>
+
+    <a href="z1.0.0.1.html">1.0.0.1</a>
+    <a href="z1.0.1.0.html">1.0.1.0</a>
+    <a href="z1.0.1.1.html">1.0.1.1</a>
+    <a href="z1.1.1.1.html">Report a Bug</a>
+    <a href="z2.1.1.1.html">Hardware Support</a>
+</div>
+
+
+<div class="content">
+
+<h1 style="font-size: 20px;">POWERED BY <span style="color: Blue;">LINTEK</span></h1>
+
+
+
+
+<div id="v1.0.0.0">
+  <h2><span style="color: black;">UPDATE</span> <span style="color: red;">1.0.1.1</span></h2>
+  <p>There are no reported bugs and fixes with this version of <span style="color: red;">SDR</span> OS.</p>
+</div>
+
+
+
+
+
+</body>
+</html>

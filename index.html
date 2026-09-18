@@ -55,13 +55,12 @@ body {
     background-color: #D3D3D3;
 }
 
-/* Add spacing so content isn't hidden behind fixed elements */
 .content {
-    margin-top: 160px; /* space for header + nav bar */
+    margin-top: 160px;
     padding: 20px;
 }
 
-/* Dropdown styling */
+
 .dropbtn {
   background-color: #000000;
   color: red;
@@ -104,7 +103,7 @@ body {
     background-color: #1C1C1C;
 }
 
-/* Section styling */
+
 h2 {
     color: red;
 }
@@ -113,22 +112,21 @@ h2 {
 
 <body>
 
-<!-- FIXED HEADER -->
+
 <div class="fixed-top-box">
     <h1><span style="color: red;">SDR</span> <span style="color: white;">CONSOLE SUPPORT PAGE</span></h1>
 </div>
 
-<!-- FIXED NAV BAR -->
 <div class="nav-bar">
-    <a href="#v1.0.0.0">1.0.0.0</a>
-    <a href="#v1.0.0.1">1.0.0.1</a>
-    <a href="#v1.0.1.0">1.0.1.0</a>
-    <a href="#v1.0.1.1">1.0.1.1</a>
-    <a href="#v1.1.1.1">Report a Bug</a>
-    <a href="#v2.1.1.1">Hardware Support</a>
+    <a href="z1.0.0.0.html">1.0.0.0</a>
+    <a href="z1.0.0.1.html">1.0.0.1</a>
+    <a href="z1.0.1.0.html">1.0.1.0</a>
+    <a href="z1.0.1.1.html">1.0.1.1</a>
+    <a href="z1.1.1.1.html">Report a Bug</a>
+    <a href="z2.1.1.1.html">Hardware Support</a>
 </div>
 
-<!-- MAIN CONTENT -->
+
 <div class="content">
 
 <h1 style="font-size: 20px;">POWERED BY <span style="color: Blue;">LINTEK</span></h1>
@@ -139,12 +137,12 @@ h2 {
 <div class="dropdown">
   <button class="dropbtn">Quick Links</button>
   <div class="dropdown-content">
-    <a href="#v1.0.0.0">Version 1.0.0.0</a>
-    <a href="#v1.0.0.1">Version 1.0.0.1</a>
-    <a href="#v1.0.1.0">Version 1.0.1.0</a>
-    <a href="#v1.0.1.1">Version 1.0.1.1</a>
-    <a href="#v1.1.1.1">Report a Bug</a>
-    <a href="#v2.1.1.1">Hardware Support</a>
+    <a href="z1.0.0.0.html">Version 1.0.0.0</a>
+    <a href="z1.0.0.1.html">Version 1.0.0.1</a>
+    <a href="z1.0.1.0.html">Version 1.0.1.0</a>
+    <a href="z1.0.1.1.html">Version 1.0.1.1</a>
+    <a href="z1.1.1.1.html">Report a Bug</a>
+    <a href="z2.1.1.1.html">Hardware Support</a>
   </div>
 </div>
 
@@ -172,7 +170,7 @@ h2 {
 
 <div id="v1.1.1.1">
   <h2><span style="color: black;">REPORT A BUG</span> <span style="color: red;"></span></h2>
-  <p>For All Bug Reporting Please Contact a Technition on lintekbusiness@gmail.com</p>
+  <p>For All Bug Reporting Please Contact a Technition on 22GrahamD@ccgrammarschool.co.uk</p>
 </div>
 
 <div id="v2.1.1.1">
@@ -180,37 +178,8 @@ h2 {
   <p>Turning on the <span style="color: red;">SDR</span> console.</p>
 </div>
 
-<!-- FIXED: Added closing bracket and fixed the ID attribute to match CSS/JS -->
-<img id="draggable-img" src="gold calligraphy log.png" alt="A happy golden retriever puppy">
 
-<script>
-  // FIXED: Targets the correct matching ID element now
-  const img = document.getElementById('draggable-img');
-  let isDragging = false;
-  let startX, startY;
-
-  img.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.clientX - img.offsetLeft;
-    startY = e.clientY - img.offsetTop;
-    img.style.cursor = 'grabbing';
-    // Prevents standard browser image dragging ghost effects
-    e.preventDefault(); 
-  });
-
-  document.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    img.style.left = (e.clientX - startX) + 'px';
-    img.style.top = (e.clientY - startY) + 'px';
-  });
-
-  document.addEventListener('mouseup', () => {
-    isDragging = false;
-    img.style.cursor = 'grab';
-  });
-</script>
-
-</div> <!-- Added missing closing content div -->
+<h1>install link for the SDR</h1> 
 </body>
 </html>
 
